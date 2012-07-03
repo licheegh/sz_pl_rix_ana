@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Application	gui.py	/^class Application(Frame):$/;"	c	inherits:Frame
+MM_findObj	proj.htm	/^function MM_findObj(n, d) { \/\/v4.01$/;"	f
+MM_preloadImages	proj.htm	/^function MM_preloadImages() { \/\/v3.0$/;"	f
+MM_swapImage	proj.htm	/^function MM_swapImage() { \/\/v3.0$/;"	f
+MM_swapImgRestore	proj.htm	/^function MM_swapImgRestore() { \/\/v3.0$/;"	f
+__doPostBack	proj.htm	/^function __doPostBack(eventTarget, eventArgument) {$/;"	f
+__init__	gui.py	/^	def __init__(self,master=None):$/;"	m	class:Application	access:public
+abstract_string	analyzer.py	/^def abstract_string(string):$/;"	f	access:public
+addBookmark	proj.htm	/^function addBookmark(title,url) {$/;"	f
+analyzer	gui.py	/^import analyzer$/;"	i
+app	gui.py	/^app=Application()$/;"	v
+creatWidgets	gui.py	/^	def creatWidgets(self):$/;"	m	class:Application	access:public
+data	analyzer.py	/^		data=urllib2.urlopen(target_url)$/;"	v
+find_target_line	analyzer.py	/^def find_target_line(data):$/;"	f	access:public
+get_stat	gui.py	/^	def get_stat(self):$/;"	m	class:Application	access:public
+re	analyzer.py	/^import re$/;"	i
+sale_stat	analyzer.py	/^		sale_stat=abstract_string(target_line)$/;"	v
+szpl_ana	analyzer.py	/^def szpl_ana(target_url):$/;"	f	access:public
+target_line	analyzer.py	/^		target_line=find_target_line(data)$/;"	v
+target_url	analyzer.py	/^	target_url='file:\/\/\/F:\/web_page_ana\/proj.htm'$/;"	v
+time	gui.py	/^import time$/;"	i
+urllib2	analyzer.py	/^import urllib2$/;"	i
