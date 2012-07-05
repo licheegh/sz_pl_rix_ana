@@ -44,23 +44,26 @@ class Application(Frame):
 		room=self.room_number.get()
 		#print self.stat
 		if room!='':
-			string_to_display='\nRoom'+room+':'+str(self.stat[room])
+			if self.stat.has_key(room):
+				string_to_display='\nRoom'+room+':'+str(self.stat[room])
+			else:
+				string_to_display='Room not find.'
 			self.result_display.set(string_to_display)
 
 	def creatWidgets(self):
-		self.quitButton=Button(self,text='quit',command=self.quit)
-		self.quitButton.grid(column=2,row=2)
-
 		self.valueEntry=Entry(self,width=70,textvariable=self.value_entered)
 		self.valueEntry.grid(column=1,row=1)
 
 		self.funButton=Button(self,text='get info',command=self.get_stat)
 		self.funButton.grid(column=2,row=1)
 
-		self.outputLabel=Label(self,height=10,width=70,justify=LEFT,textvariable=self.result_display)
+		self.quitButton=Button(self,text='quit',command=self.quit)
+		self.quitButton.grid(column=2,row=2)
+
+		self.outputLabel=Label(self,anchor=NW,height=10,width=70,justify=LEFT,textvariable=self.result_display,wraplength=700)
 		self.outputLabel.grid(column=1,row=2)
 
-		self.valueEntry=Entry(self,width=70,textvariable=self.room_number)
+		self.valueEntry=Entry(self,width=20,textvariable=self.room_number)
 		self.valueEntry.grid(column=1,row=3)
 		
 		self.funButton=Button(self,text='get room info',command=self.get_room)
